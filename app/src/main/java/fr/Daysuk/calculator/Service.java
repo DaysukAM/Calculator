@@ -21,8 +21,8 @@ public class Service {
         Boolean issecond = false;
         nb1 = 0;
         nb2 = 0;
-        nb1string = "";
-        nb2string = "";
+        nb1string = "0";
+        nb2string = "0";
         String[] Stringtocalctab = Stringtocalc.split("");
         for (int x = 0; x < Stringtocalc.length(); x++) {
             if (Stringtocalctab[x].equals("X") || Stringtocalctab[x].equals("-") || Stringtocalctab[x].equals("+") || Stringtocalctab[x].equals("/"))
