@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorPromeo">
+
 
     <Button
         android:id="@+id/buttonPercent"
@@ -12,6 +14,7 @@
         android:layout_height="wrap_content"
         android:text="%"
         android:textSize="30dp"
+        android:background="@color/colorRed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -21,6 +24,7 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonPercent" />
 
@@ -30,6 +34,7 @@
         android:layout_height="wrap_content"
         android:text=","
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button0" />
 
@@ -40,6 +45,7 @@
         android:layout_height="wrap_content"
         android:text="1"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/buttonPercent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -49,6 +55,7 @@
         android:layout_height="wrap_content"
         android:text="2"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/button0"
         app:layout_constraintStart_toEndOf="@+id/button1" />
 
@@ -58,6 +65,7 @@
         android:layout_height="wrap_content"
         android:text="3"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/buttonComa"
         app:layout_constraintStart_toEndOf="@+id/button2" />
 
@@ -67,6 +75,7 @@
         android:layout_height="wrap_content"
         android:text="4"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -76,6 +85,7 @@
         android:layout_height="wrap_content"
         android:text="5"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintStart_toEndOf="@+id/button4" />
 
@@ -85,6 +95,7 @@
         android:layout_height="wrap_content"
         android:text="6"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/button5" />
 
@@ -94,6 +105,7 @@
         android:layout_height="wrap_content"
         android:text="7"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -103,6 +115,7 @@
         android:layout_height="wrap_content"
         android:text="8"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintStart_toEndOf="@+id/button7" />
 
@@ -112,6 +125,7 @@
         android:layout_height="wrap_content"
         android:text="9"
         android:textSize="30dp"
+        android:background="@color/colorBlue"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintStart_toEndOf="@+id/button8" />
 
@@ -121,6 +135,7 @@
         android:layout_height="wrap_content"
         android:text="C"
         android:textSize="30dp"
+        android:background="@color/colorRed"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -130,6 +145,7 @@
         android:layout_height="wrap_content"
         android:text="/"
         android:textSize="30dp"
+        android:background="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintStart_toEndOf="@+id/buttonC" />
 
@@ -139,13 +155,15 @@
         android:layout_height="wrap_content"
         android:text="X"
         android:textSize="30dp"
+        android:background="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintStart_toEndOf="@+id/buttonSlash" />
 
     <Button
         android:id="@+id/buttonLittleLess"
-        android:layout_width="137dp"
-        android:layout_height="62dp"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
         android:text="(-)"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonLess"
@@ -153,8 +171,9 @@
 
     <Button
         android:id="@+id/buttonLess"
-        android:layout_width="138dp"
-        android:layout_height="61dp"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
         android:text="-"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMore"
@@ -162,8 +181,9 @@
 
     <Button
         android:id="@+id/buttonMore"
-        android:layout_width="137dp"
-        android:layout_height="56dp"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:background="@color/colorWhite"
         android:text="+"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonEquals"
@@ -171,10 +191,35 @@
 
     <Button
         android:id="@+id/buttonEquals"
-        android:layout_width="136dp"
-        android:layout_height="122dp"
+        android:layout_width="145dp"
+        android:layout_height="100dp"
+        android:background="@color/colorRed"
         android:text="="
         android:textSize="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/TextString"
+        android:layout_width="349dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="50dp"
+        android:text=""
+        android:textSize="30dp"
+        android:background="@color/colorBlue"
+        app:layout_constraintBottom_toTopOf="@+id/TextResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextResult"
+        android:layout_width="349dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="50dp"
+        android:text=""
+        android:textSize="30dp"
+        android:background="@color/colorBlue"
+        app:layout_constraintBottom_toTopOf="@+id/buttonX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
