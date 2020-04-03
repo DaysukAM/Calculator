@@ -14,6 +14,21 @@ public class Service {
     public String getStringtocalc() {
         return Stringtocalc;
     }
+    public double getPercent(){
+        nb1 = 0;
+        if (Stringtocalc.isEmpty()) {
+        }else{
+            String[] Stringtocalctab = Stringtocalc.split("");
+            if (Stringtocalctab[0].equals("X") || Stringtocalctab[0].equals("-") || Stringtocalctab[0].equals("+") || Stringtocalctab[0].equals("/")){
+                return 0;
+            }
+        nb1 = Double.parseDouble(Stringtocalc);
+        System.out.println(nb1);
+
+            nb1 = nb1 / 100;
+        }
+        return nb1;
+    }
 
     public double getResult() {
         double result = 0;
@@ -24,6 +39,9 @@ public class Service {
         nb1string = "0";
         nb2string = "0";
         String[] Stringtocalctab = Stringtocalc.split("");
+        if (Stringtocalctab[0].equals("X") || Stringtocalctab[0].equals("-") || Stringtocalctab[0].equals("+") || Stringtocalctab[0].equals("/")){
+            return 0;
+    }
         for (int x = 0; x < Stringtocalc.length(); x++) {
             if (Stringtocalctab[x].equals("X") || Stringtocalctab[x].equals("-") || Stringtocalctab[x].equals("+") || Stringtocalctab[x].equals("/"))
 
@@ -35,17 +53,15 @@ public class Service {
             }else {
                 if (issecond) {
                     nb2string = nb2string + Stringtocalctab[x];
-                    nb2 = Integer.parseInt(nb2string);
-                    System.out.println(nb2);
                 } else {
                     nb1string = nb1string + Stringtocalctab[x];
-                    nb1 = Integer.parseInt(nb1string);
-                    System.out.println(nb1);
                 }
             }
 
 
         }
+        nb1 = Double.parseDouble(nb1string);
+        nb2 = Double.parseDouble(nb2string);
         if (operator.equals("")){
             result = nb1;
         }else if (operator.equals("X")){

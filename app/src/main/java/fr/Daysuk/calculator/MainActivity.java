@@ -27,7 +27,13 @@ public class MainActivity extends AppCompatActivity {
         buttonPercent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextString.setText(TextString.getText().toString() + "%");
+                Stringtocalc = TextString.getText().toString();
+                TextString.setText("");
+
+                service = new Service(Stringtocalc);
+                result = service.getPercent();
+
+                TextResult.setText(String.valueOf(result));
             }
         });
 
@@ -43,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         buttonComa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextString.setText(TextString.getText().toString() + ",");
+                TextString.setText(TextString.getText().toString() + ".");
             }
         });
 
